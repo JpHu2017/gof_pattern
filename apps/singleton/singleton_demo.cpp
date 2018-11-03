@@ -7,6 +7,7 @@ int main(int argc, char* argv[]) {
     LOG(INFO) << singleton_ptr->identifyItself();
 	// I want a more singleton(may in other functions or classes)
 	gof::Singleton::Ptr singleton_ptr1 = gof::Singleton::instance();
+	// in two times, id is same.
 	LOG(INFO) << singleton_ptr1->identifyItself();
     return 0;
 }

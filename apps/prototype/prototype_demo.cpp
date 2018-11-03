@@ -1,9 +1,9 @@
 #include <glog/logging.h>
 #include <iostream>
 #include <vector>
-// #include "computer_prototype.h"
+ #include "computer_prototype.h"
 #include "computer/acer_prototype.h"
-#include "computer/dell_prototype.h"
+//#include "computer/dell_prototype.h"
 int main(int argc, char* argv[]) {
     gof::ComputerPrototype::Ptr computer_ptr;
     computer_ptr.reset(new gof::AcerPrototype());
