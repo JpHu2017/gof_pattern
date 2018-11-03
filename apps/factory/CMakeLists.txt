@@ -1,0 +1,6 @@
+SET(app factory)
+P_APP_INCLUDE_MODULES(${app} MODULES def)
+SET(DEPS ${GLOG_LIBRARY})
+P_CREATE_APP(${app} factory_demo.cpp DEPENDENCY ${DEPS})
+#P_APP_CELL_TEST(dummy_app_cell_test test/dummy_app_cell_test.cpp)
+P_INSTALL_APP(${app})

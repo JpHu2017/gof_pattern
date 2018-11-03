@@ -1,0 +1,10 @@
+build/*
+cmake-build-debug/*
+linux/*
+vs2013/*
+*.
+*~
+.*
+~*
+**/data/*
+!.gitignore

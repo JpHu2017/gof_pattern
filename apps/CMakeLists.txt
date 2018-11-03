@@ -1,0 +1,5 @@
+P_ADD_APP(dummy)
+P_ADD_APP(simple_factory)
+P_ADD_APP(factory)
+P_ADD_APP(abstract_factory)
+P_ADD_APP(builder)
