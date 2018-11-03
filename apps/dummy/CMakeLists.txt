@@ -1,5 +1,0 @@
-SET(app dummy)
-P_APP_INCLUDE_MODULES(${app} MODULES dummy)
-P_CREATE_APP(${app} dell_demo.cpp)
-P_APP_CELL_TEST(dummy_app_cell_test test/dummy_app_cell_test.cpp)
-P_INSTALL_APP(${app})
