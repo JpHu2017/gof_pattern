@@ -21,6 +21,7 @@ int main(int argc, char* argv[]) {
     // case
     gof::Equipment::Ptr case_ptr;
     case_ptr.reset(new gof::CompositeEquipment("Case"));
+    // only composite could execute the function 'add' & 'remove' 
     if(case_ptr->isComposite()) {
         case_ptr->add(memory_ptr);
         case_ptr->add(cpu_ptr);
