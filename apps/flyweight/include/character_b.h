@@ -7,11 +7,12 @@ namespace gof {
 class CharacterB : public Character{
 public:
     typedef std::shared_ptr<CharacterB> Ptr;
+    CharacterB();
     virtual ~CharacterB();
     virtual void setSize(const int& w, const int& h);
     virtual void display();
 private:
-    CharacterB();
+    
 };
 }
 #endif //GOF_PATTERN_CHARACTERB_H

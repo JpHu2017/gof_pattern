@@ -7,7 +7,7 @@ void CharacterB::setSize(const int& w, const int& h) {
     _height = h;
 }
 void CharacterB::display() {
-    LOG(INFO) << "CharacterB ：" << _char_symbol << "(" << _width << "," << _height << ")";
+	LOG(INFO) << "CharacterB : " << _char_symbol << "(" << _width << "," << _height << ")";
 }
 CharacterB::CharacterB() {
     _char_symbol = 'B';

@@ -3,8 +3,8 @@
 #include "character_b.h"
 namespace gof {
 CharacterFactory::CharacterFactory() {
-    char_map.insert('A', Character::Ptr(new CharacterA()));
-    char_map.insert('B', Character::Ptr(new CharacterB()));
+    _char_map.insert(std::make_pair('A', Character::Ptr(new CharacterA())));
+    _char_map.insert(std::make_pair('B', Character::Ptr(new CharacterB())));
 }
 CharacterFactory::~CharacterFactory() {}
 Character::Ptr CharacterFactory::getCharacter(const char& c) {
