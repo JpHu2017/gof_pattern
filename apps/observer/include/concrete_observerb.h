@@ -4,11 +4,11 @@
 #include "observer.h"
 #include "subject.h"
 namespace gof {
-class ConcreteObserver2 : public Observer {
+class ConcreteObserverB : public Observer {
 public:
-    typedef std::shared_ptr<ConcreteObserver2> Ptr;
-    ConcreteObserver2(const Subject::Ptr& subject_ptr);
-    virtual ~ConcreteObserver2();
+    typedef std::shared_ptr<ConcreteObserverB> Ptr;
+    ConcreteObserverB(const Subject::Ptr& subject_ptr);
+    virtual ~ConcreteObserverB();
     virtual void update();
 private:
     Subject::Ptr _subject_ptr;
